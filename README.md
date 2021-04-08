@@ -10,10 +10,10 @@ Anggota kelompok:
 
 Program digunakan untuk menyimulasikan algoritma dijkstra yang digunakan pada pemetaan tanaman di kebun raya purwodadi.
 Program menerima 5 input, yaitu:
-a. nama file daftar tanaman. File ini berisi daftar nama tanaman yang berada di kebun raya purwodadi. Seluruh tanaman diasumsikan berbeda.
-b. nama file jarak antar pohon. File ini berisi jarak setiap pohonnya yang disusun dalam bentuk matriks segitiga bawah kiri. -1 melambangkan vertex yang tidak terhubung.
-c. titik awal.
-d. titik tujuan.
-e. validasi pencarian.
+1. nama file daftar tanaman. File ini berisi daftar nama tanaman yang berada di kebun raya purwodadi. Seluruh tanaman diasumsikan berbeda.
+2. nama file jarak antar pohon. File ini berisi jarak setiap pohonnya yang disusun dalam bentuk matriks segitiga bawah kiri. -1 melambangkan vertex yang tidak terhubung.
+3. titik awal.
+4. titik tujuan.
+5. validasi pencarian.\n
 
 Program mengeluarkan output berupa daftar nama tanaman yang harus dilalui serta jarak antar kedua tanaman.
