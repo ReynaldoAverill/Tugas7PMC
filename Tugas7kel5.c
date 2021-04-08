@@ -1,3 +1,13 @@
+/*
+Kelompok 5 PMC Kelas 01 EL2008
+Anggota kelompok:
+1. Alifia Zahratul Ilmi (18319013)
+2. Astrid Novianti H. (18319014)
+3. M. Zharif Fadhil (18319012)
+4. Rafli Fikri A. (13219040)
+5. Reynaldo Averill A. (13219071)
+Program digunakan untuk menyimulasikan algoritma dijkstra yang digunakan pada pemetaan tanaman di kebun raya purwodadi.*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -24,6 +34,7 @@ void printgraph(int n, int graph[n][n]){
     }
 }
 
+// Fungsi digunakan untuk mencari indeks yang akan diproses pada algoritma dijkstra
 int idx_process(int n, int jarak_final[n], bool is_final[n]){
     bool is_found=false;
     int idx_min, val_minimum;
@@ -41,7 +52,7 @@ int idx_process(int n, int jarak_final[n], bool is_final[n]){
         return idx_min;
     }
     else{
-        printf("oke masuk sini\n");
+        //Jarak minimum ke seluruh vertex telah ditemukan
         return int_max;
     }
 }
@@ -53,6 +64,7 @@ int main (){
     printf("Silahkan masukkan nama file database nama tanaman di kebun: ");
     scanf("%s",&namafile_tanaman);
     FILE* fp_tanaman = fopen(namafile_tanaman,"r");
+
     // Baca isi file tanaman
     char baris[max_len];
     char* token;
@@ -88,8 +100,8 @@ int main (){
         }
         j+=1;
     }
-    printf("Pembacaan jarak antar tanaman berhasil dilakukan.\n");
-    printgraph(n_tanaman,graph_tanaman);
+    printf("Pembacaan jarak antar tanaman berhasil dilakukan.\n\n");
+    //printgraph(n_tanaman,graph_tanaman);
     char progress='y';
     while(progress=='y'){
         // Pembacaan vertex awal dan akhir
