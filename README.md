@@ -14,6 +14,6 @@ Program menerima 5 input, yaitu:
 2. nama file jarak antar pohon. File ini berisi jarak setiap pohonnya yang disusun dalam bentuk matriks segitiga bawah kiri. -1 melambangkan vertex yang tidak terhubung.
 3. titik awal.
 4. titik tujuan.
-5. validasi pencarian.\n
+5. validasi pencarian.
 
 Program mengeluarkan output berupa daftar nama tanaman yang harus dilalui serta jarak antar kedua tanaman.
